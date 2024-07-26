@@ -65,7 +65,6 @@ jobs:
       run: |
         cd openwrt
         sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
-        sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
         sed -i 's/ImmortalWrt/RaphaelWrt/g' package/base-files/files/bin/config_generate
         sed -i 's/ImmortalWrt-2.4G/LeslieForever/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
         sed -i 's/ImmortalWrt-5G/LeslieForever_5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
